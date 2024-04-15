@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        fieldset{
+          border-radius: 10px;
+          border: 2px solid rgb(129, 56, 56);
+        }
+        legend{
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+        }
+    </style>
+
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="Nome">Nome: </label>
+        <input type="text" name="campo_nome" id="nome">
+        <br>
+        <label for="CPF">CPF</label>
+        <input type="cpf" name="cpf" id="cpf">
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="campo_email" id="email">
+        <br>
+        <label for="telefone">telefone</label>
+        <input type="telefone" name="telefone" id="telefone">
+      </fieldset>
+
+      <fieldset>
+        <legend>Gênero</legend>
+
+        <input type="radio" name="sexo" id="sexo_masc" value="Masculino">
+        <label for="sexo_masc">Masculino</label>
+        <br>
+
+        <input type="radio" name="sexo" id="sexo_fem" value="Feminino">
+        <label for="sexo_fem">Feminino</label>
+        <br>
+
+        <input type="radio" name="sexo" id="sexo_outros" value="Outro">
+        <label for="sexo_outros">Outro</label>
+</fieldset>
+<fieldset>
+        <legend>Preferência de contato</legend>
+        <br>
+        <input type="radio" name="pref_contato" value="email_selecionado" id="pref_email">
+        <label for="pref_email">Email</label>
+        <br>
+        <input type="radio" name="pref_contato" value="telefone_selecionado" id="pref_telefone">
+        <label for="pref_telefone">WhatsApp</label>
+        <br>
+      </fieldset>
+
+   
+      <fieldset>
+        <legend>Selecione sua opção:</legend>
+        <label for="assunto">Escolha</label>
+        <select name="campo_assunto" id="assunto">
+          <option value="assunto_1">Médicos</option>
+          <option value="assunto_2">Especialidade</option>
+          <option value="assunto_3">Agendamentos</option>
+          <option value="assunto_4">Local</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Deixe sua mensagem:</legend>
+        
+        <textarea name="campo_mensagem" id="mensagem" placeholder="Deixa sua mensagem "></textarea>
+      </fieldset>
+    </form>
+    <input type="submit">
+
+  </body>
+</html>
